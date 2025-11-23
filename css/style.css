@@ -245,7 +245,11 @@ a:focus {
 .hero {
     position: relative;
     width: 100%;
+<<<<<<< HEAD
     margin-bottom: 105px;
+=======
+    margin-bottom: 45px;
+>>>>>>> 05b1923147a5c5018e79fe18b5787efa35fd648e
     padding: 120px 0 0 0;
     overflow: hidden;
     background: linear-gradient(rgba(239, 35, 60, .95), rgba(239, 35, 60, .95)), url(../img/hero-bg.jpg);
@@ -451,7 +455,10 @@ a:focus {
 .section-header {
     position: relative;
     margin-bottom: 45px;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 05b1923147a5c5018e79fe18b5787efa35fd648e
 }
 
 .section-header p {
