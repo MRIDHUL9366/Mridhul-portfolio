@@ -245,7 +245,7 @@ a:focus {
 .hero {
     position: relative;
     width: 100%;
-    margin-bottom: 45px;
+    margin-bottom: 105px;
     padding: 120px 0 0 0;
     overflow: hidden;
     background: linear-gradient(rgba(239, 35, 60, .95), rgba(239, 35, 60, .95)), url(../img/hero-bg.jpg);
@@ -509,8 +509,8 @@ a:focus {
 .about {
     position: relative;
     width: 100%;
-    margin: -45px 0 45px 0;
-    color:white;
+    margin: 10px 0 45px 0;
+    color: white;
 }
 
 .about .col-lg-6 {
@@ -519,24 +519,31 @@ a:focus {
 
 .about .section-header {
     margin-bottom: 30px;
-
-}
-.section-header p{
-    font-size:25px;
-    color:black;
 }
 
+.section-header p {
+    font-size: 25px;
+    color: black;
+}
 
+/* ✅ Fixed image container height */
 .about .about-img {
     position: relative;
-    height:100%;
+    width: 100%;
+    height: 550px;          /* fixed height for the container */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+/* ✅ Image fills container, well-cropped */
 .about .about-img img {
-    position: relative;
-    width:78%;
-    height:100%;
-
+    width: 90%;
+    height: 100%;
+    object-fit: cover;      /* crops cleanly without distortion */
+    object-position: top;   /* keeps face visible */
+    display: block;
 }
 
 .about .about-content {
@@ -558,7 +565,7 @@ a:focus {
 .about .skill-name p {
     display: inline-block;
     margin-bottom: 5px;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
 }
 
@@ -588,15 +595,18 @@ a:focus {
         padding: 45px 15px 0 15px;
     }
 
+    /* ✅ Responsive image fix */
+    .about .about-img {
+        height: 380px;
+    }
+
     .about .about-img img {
-        position: relative;
-        width:100%;
-
-
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
     }
 }
-
-
 /*******************************/
 /******* Experience CSS ********/
 /*******************************/
